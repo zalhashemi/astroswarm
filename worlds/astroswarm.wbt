@@ -1,0 +1,546 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/released/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/released/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/released/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/rocks/protos/Rock.proto"
+
+WorldInfo {
+  title "AstroSwarm - Mars Surface Exploration"
+  contactProperties [
+    ContactProperties {
+      maxContactJoints 16
+    }
+  ]
+}
+Viewpoint {
+  orientation -0.710910757776661 0.017714512274574205 0.7030590946231245 2.6991492230072915
+  position -0.917691704264984 -2.8453037563566994 8.46458061573782
+}
+TexturedBackground {
+  texture "mars"
+}
+TexturedBackgroundLight {
+}
+Solid {
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.7 0.3 0.1
+        roughness 1
+        metalness 0
+      }
+      geometry Plane {
+        size 4 4
+      }
+    }
+  ]
+  name "mars_floor"
+  boundingObject Plane {
+    size 4 4
+  }
+}
+Solid {
+  translation 0.5 -0.72 0.004
+  rotation 0 0 1 0.4
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.52 0.27 0.1
+        roughness 1
+      }
+      geometry Box {
+        size 0.14 0.09 0.008
+      }
+    }
+  ]
+  name "pebble1"
+}
+Solid {
+  translation -0.32 1.15 0.003
+  rotation 0 0 1 1.1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.48 0.24 0.09
+        roughness 1
+      }
+      geometry Box {
+        size 0.11 0.07 0.006
+      }
+    }
+  ]
+  name "pebble2"
+}
+Solid {
+  translation 1.38 0.65 0.005
+  rotation 0 0 1 0.7
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.55 0.29 0.11
+        roughness 1
+      }
+      geometry Box {
+        size 0.18 0.12 0.01
+      }
+    }
+  ]
+  name "pebble3"
+}
+Solid {
+  translation -1.55 0.42 0.004
+  rotation 0 0 1 2.1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.5 0.26 0.1
+        roughness 1
+      }
+      geometry Box {
+        size 0.13 0.08 0.008
+      }
+    }
+  ]
+  name "pebble4"
+}
+Solid {
+  translation 0.78 -1.45 0.005
+  rotation 0 0 1 0.3
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.57 0.3 0.12
+        roughness 1
+      }
+      geometry Box {
+        size 0.16 0.1 0.01
+      }
+    }
+  ]
+  name "pebble5"
+}
+Solid {
+  translation -0.55 -1.6 0.003
+  rotation 0 0 1 1.8
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.46 0.23 0.09
+        roughness 1
+      }
+      geometry Box {
+        size 0.1 0.06 0.006
+      }
+    }
+  ]
+  name "pebble6"
+}
+Solid {
+  translation 1.55 -0.85 0.005
+  rotation 0 0 1 0.9
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.53 0.28 0.11
+        roughness 1
+      }
+      geometry Box {
+        size 0.2 0.13 0.01
+      }
+    }
+  ]
+  name "pebble7"
+}
+Solid {
+  translation -1.75 0.55 0.004
+  rotation 0 0 1 2.6
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.49 0.25 0.1
+        roughness 1
+      }
+      geometry Box {
+        size 0.12 0.08 0.008
+      }
+    }
+  ]
+  name "pebble8"
+}
+Solid {
+  translation 0.28 -0.35 0.003
+  rotation 0 0 1 0.5
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.51 0.27 0.1
+        roughness 1
+      }
+      geometry Box {
+        size 0.09 0.06 0.006
+      }
+    }
+  ]
+  name "pebble9"
+}
+Solid {
+  translation -0.88 -1.52 0.004
+  rotation 0 0 1 1.3
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.54 0.28 0.11
+        roughness 1
+      }
+      geometry Box {
+        size 0.15 0.09 0.008
+      }
+    }
+  ]
+  name "pebble10"
+}
+Solid {
+  translation 0.05 1.72 0.005
+  rotation 0 0 1 0.2
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.56 0.29 0.11
+        roughness 1
+      }
+      geometry Box {
+        size 0.17 0.11 0.01
+      }
+    }
+  ]
+  name "pebble11"
+}
+Solid {
+  translation 1.68 0.05 0.004
+  rotation 0 0 1 1.6
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.47 0.24 0.09
+        roughness 1
+      }
+      geometry Box {
+        size 0.13 0.08 0.008
+      }
+    }
+  ]
+  name "pebble12"
+}
+Solid {
+  translation -1.2 0.95 0.003
+  rotation 0 0 1 0.8
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.5 0.26 0.1
+        roughness 1
+      }
+      geometry Box {
+        size 0.1 0.07 0.006
+      }
+    }
+  ]
+  name "pebble13"
+}
+Solid {
+  translation 0.9 0.38 0.004
+  rotation 0 0 1 2.3
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.58 0.31 0.12
+        roughness 1
+      }
+      geometry Box {
+        size 0.14 0.09 0.008
+      }
+    }
+  ]
+  name "pebble14"
+}
+Solid {
+  translation -0.15 -0.88 0.005
+  rotation 0 0 1 1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.44 0.22 0.08
+        roughness 1
+      }
+      geometry Box {
+        size 0.19 0.12 0.01
+      }
+    }
+  ]
+  name "pebble15"
+}
+Rock {
+  translation -1.10082 -0.899816 0
+}
+Rock {
+  translation -0.649528 -0.756059 0
+  name "rock(2)"
+}
+Rock {
+  translation -0.159431 -1.76247 0
+  rotation 0 0 1 0.785398
+  name "rock(3)"
+}
+Rock {
+  translation 0.305756 1.385 0
+  name "rock(4)"
+}
+Rock {
+  translation 0.700437 -1.5174 0
+  name "rock(5)"
+}
+Rock {
+  translation 1.09265 -0.270826 0
+  name "rock(6)"
+}
+Rock {
+  translation -1.8721 -1.56318 0
+  name "rock(7)"
+}
+Rock {
+  translation 1.86831 0.288924 0
+  name "rock(8)"
+}
+Rock {
+  translation 1.8289 0.364515 0
+  name "rock(9)"
+}
+Rock {
+  translation -1.33093 1.10597 0
+  name "rock(10)"
+}
+Rock {
+  translation 0.673988 1.27423 0
+  name "rock(11)"
+}
+Rock {
+  translation -0.696028 -0.904012 0
+  name "rock(1)"
+}
+Robot {
+  translation 1.2 0 0.1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0.85 0
+        roughness 0.3
+        metalness 0.2
+      }
+      geometry Sphere {
+        radius 0.1
+      }
+    }
+    Emitter {
+      range 0.5
+      channel 1
+    }
+  ]
+  name "beacon"
+  boundingObject Sphere {
+    radius 0.1
+  }
+  controller "beacon_controller"
+}
+Solid {
+  translation -0.0935899 0.183387 0.1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.45 0.25 0.1
+        roughness 1
+      }
+      geometry Box {
+        size 0.25 0.25 0.2
+      }
+    }
+  ]
+  name "rock1"
+  boundingObject Box {
+    size 0.25 0.25 0.2
+  }
+}
+Solid {
+  translation -0.846204 0.785202 0.1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.4 0.2 0.08
+        roughness 1
+      }
+      geometry Box {
+        size 0.2 0.3 0.2
+      }
+    }
+  ]
+  name "rock2"
+  boundingObject Box {
+    size 0.2 0.3 0.2
+  }
+}
+Solid {
+  translation 1.09181 -1.23564 0.1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.5 0.28 0.12
+        roughness 1
+      }
+      geometry Box {
+        size 0.3 0.2 0.2
+      }
+    }
+  ]
+  name "rock3"
+  boundingObject Box {
+    size 0.3 0.2 0.2
+  }
+}
+Solid {
+  translation -1.2634 -1.06339 0.1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.42 0.22 0.09
+        roughness 1
+      }
+      geometry Box {
+        size 0.2 0.2 0.18
+      }
+    }
+  ]
+  name "rock4"
+  boundingObject Box {
+    size 0.2 0.2 0.18
+  }
+}
+Solid {
+  translation 0.139064 0.648243 0.1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.48 0.26 0.11
+        roughness 1
+      }
+      geometry Box {
+        size 0.15 0.25 0.18
+      }
+    }
+  ]
+  name "rock5"
+  boundingObject Box {
+    size 0.15 0.25 0.18
+  }
+}
+Solid {
+  translation 0 2 0.1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.6 0.25 0.1
+        roughness 1
+      }
+      geometry Box {
+        size 4 0.05 0.2
+      }
+    }
+  ]
+  name "wall_north"
+  boundingObject Box {
+    size 4 0.05 0.2
+  }
+}
+Solid {
+  translation 0 -2 0.1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.6 0.25 0.1
+        roughness 1
+      }
+      geometry Box {
+        size 4 0.05 0.2
+      }
+    }
+  ]
+  name "wall_south"
+  boundingObject Box {
+    size 4 0.05 0.2
+  }
+}
+Solid {
+  translation 2 0 0.1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.6 0.25 0.1
+        roughness 1
+      }
+      geometry Box {
+        size 0.05 4 0.2
+      }
+    }
+  ]
+  name "wall_east"
+  boundingObject Box {
+    size 0.05 4 0.2
+  }
+}
+Solid {
+  translation -2 0 0.1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.6 0.25 0.1
+        roughness 1
+      }
+      geometry Box {
+        size 0.05 4 0.2
+      }
+    }
+  ]
+  name "wall_west"
+  boundingObject Box {
+    size 0.05 4 0.2
+  }
+}
+E-puck {
+  hidden position_0_0 3567.061143786606
+  hidden position_0_1 3544.636432799882
+  hidden rotation_1 0 -1 0 1.7881106913991656
+  hidden rotation_2 0 1 0 0.9199195505954135
+  translation 1.8703454910443187 0.5100725842009972 -6.397799394011229e-05
+  rotation 0.00032919276679604557 0.00020158584963877107 -0.999999925497631 2.0448315370822394
+  name "robot1"
+  controller "astroswarm_controller"
+}
+E-puck {
+  hidden position_0_0 3455.4725505825004
+  hidden position_0_1 3645.3385281700034
+  hidden rotation_1 0 -1 0 0.27936836627217276
+  hidden rotation_2 0 1 0 1.0910500058432717
+  translation -1.4915844385170294 0.7786650120362436 -6.394237744007485e-05
+  rotation 0.000703545309820093 0.00015869962064942567 0.9999997399191799 -2.697879220617284
+  name "robot2"
+  controller "astroswarm_controller"
+}
+E-puck {
+  hidden position_0_0 3495.687104478125
+  hidden position_0_1 3520.375088293811
+  hidden rotation_1 0 1 0 2.236073686275012
+  hidden rotation_2 0 1 0 1.7913162732427046
+  translation -1.7217971743457616 -0.2677657816248905 -6.39586656673765e-05
+  rotation 0.0002767648959914558 -0.00034349393216441673 -0.9999999027065506 -1.3564499582420089
+  name "robot3"
+  controller "astroswarm_controller"
+}
